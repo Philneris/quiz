@@ -151,7 +151,7 @@ const validateAnswer = () => {
   // ✅ Conditions pour accepter la réponse :
   // - Similarité ≥ 0.75
   // - Longueur de la réponse utilisateur ≥ 60 % de la bonne réponse
-  if (similarity >= 0.25 && lengthRatio >= 0.3) {
+  if (similarity >= 0.9) {
     isCorrect.value = true
     feedbackMessage.value = '✅ Bonne réponse !'
     score.value++
